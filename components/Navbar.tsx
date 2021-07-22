@@ -18,19 +18,19 @@ const Navbar: React.FC = (props): JSX.Element => {
   const games = [
     {
       name: 'Daily Themed Crossword',
-      href: '/crossword',
+      href: '/dtc',
     },
     {
       name: 'Word Trip',
-      href: '/word-trip',
+      href: '/trip',
     },
     {
       name: 'Crossword Jam',
-      href: '/crossword-jam',
+      href: '/jam',
     },
     {
       name: 'Word Wars',
-      href: '/word-wars',
+      href: '/wars',
     },
     {
       name: 'Solitaire',

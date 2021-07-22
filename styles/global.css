@@ -195,9 +195,35 @@ footer {
 
   .footer {
     height: 400px;
-    width: 84%;
     color: #fff;
     margin: 0 auto;
     font-size: 14px;
   }
+}
+
+.slider-button {
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 21px 28px;
+  background-color: #000;
+  border: 0;
+  border-radius: 40px;
+  color: #e7f7fa;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all .25s ease-in-out;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+p{
+  font-size: 18px;
+  line-height: 27px;
 }
