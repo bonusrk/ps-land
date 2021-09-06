@@ -1,19 +1,13 @@
-import React, { useState } from 'react';
-import clsx from 'clsx';
-import Container from './Grid/Container';
-import Row from './Grid/Row';
-import Col from './Grid/Col';
+import React, { useState } from 'react'
+import clsx from 'clsx'
+import Container from './Grid/Container'
+import Row from './Grid/Row'
+import Col from './Grid/Col'
 
-const Navbar: React.FC = (props): JSX.Element => {
-  const [visible, setVisible] = useState(false);
-  const classList = clsx(
-    'hidden-navbar',
-    { visible },
-  );
-  const navbarClassList = clsx(
-    'navbar',
-    { visible },
-  );
+const Navbar: React.FC = (): JSX.Element => {
+  const [visible, setVisible] = useState(false)
+  const classList = clsx('hidden-navbar', { visible })
+  const navbarClassList = clsx('navbar', { visible })
 
   const games = [
     {
@@ -36,17 +30,14 @@ const Navbar: React.FC = (props): JSX.Element => {
       name: 'Solitaire',
       href: '/solitaire',
     },
-  ];
+  ]
 
   return (
     <nav>
       <Container>
         <Row>
           <Col>
-            <div
-              className="relative"
-              onMouseLeave={() => setVisible(false)}
-            >
+            <div className="relative" onMouseLeave={() => setVisible(false)}>
               <div className={navbarClassList}>
                 <img
                   height="40px"
@@ -61,31 +52,23 @@ const Navbar: React.FC = (props): JSX.Element => {
                   Games
                 </div>
               </div>
-              <div
-                className={classList}
-                onMouseLeave={() => setVisible(false)}
-              >
+              <div className={classList} onMouseLeave={() => setVisible(false)}>
                 <div className="w-full h-full flex items-center pl-10">
                   <ul className="flex">
                     {games.map((g, index) => (
-                      <li
-                        className="mr-10"
-                        key={index}
-                      >
+                      <li className="mr-10" key={index}>
                         <a href={g.href}>{g.name}</a>
                       </li>
                     ))}
                   </ul>
                 </div>
-
               </div>
             </div>
-
           </Col>
         </Row>
       </Container>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

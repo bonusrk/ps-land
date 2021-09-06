@@ -1,9 +1,9 @@
-import React from 'react';
-import Container from './Grid/Container';
-import Row from './Grid/Row';
-import Col from './Grid/Col';
+import React from 'react'
+import Container from './Grid/Container'
+import Row from './Grid/Row'
+import Col from './Grid/Col'
 
-const Footer: React.FC = (props): JSX.Element => (
+const Footer: React.FC = (): JSX.Element => (
   <footer>
     <Container>
       <Row>
@@ -13,6 +13,6 @@ const Footer: React.FC = (props): JSX.Element => (
       </Row>
     </Container>
   </footer>
-  );
+)
 
-export default Footer;
+export default Footer

@@ -6,7 +6,6 @@ import 'swiper/components/navigation/navigation.min.css'
 import DefaultLayout from '../layouts/DefaultLayout'
 
 function App({ Component, pageProps }: AppProps): JSX.Element {
-
   return (
     <DefaultLayout>
       <Component {...pageProps} />
