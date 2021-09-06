@@ -34,11 +34,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -51,16 +47,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "exclude": [
-    "node_modules",
-    ".next",
-    "out",
-    "./test/testUtils.ts"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.js",
-  ]
+  "exclude": ["node_modules", ".next", "out", "./test/testUtils.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
 }

@@ -1,13 +1,11 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {
-  Pagination, Navigation,
-} from 'swiper/core';
-import { useRouter } from 'next/router';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperCore, { Pagination, Navigation } from 'swiper/core'
+import { useRouter } from 'next/router'
 
-SwiperCore.use([Pagination, Navigation]);
+SwiperCore.use([Pagination, Navigation])
 
 export const Home = (): JSX.Element => {
-  const router = useRouter();
+  const router = useRouter()
   return (
     <div>
       <Swiper
@@ -89,7 +87,7 @@ export const Home = (): JSX.Element => {
         </SwiperSlide>
       </Swiper>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

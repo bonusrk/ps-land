@@ -26,7 +26,6 @@ body {
   .col {
     @apply max-w-full;
   }
-
 }
 
 nav {
@@ -45,14 +44,14 @@ nav {
   padding-left: 40px;
   border-bottom-right-radius: 35px;
   border-bottom-left-radius: 35px;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .hidden-navbar {
-  @apply w-full ;
+  @apply w-full;
   margin-top: -30px;
   padding-top: 30px;
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, 0.75);
   height: 0;
   border-bottom-right-radius: 35px;
   border-bottom-left-radius: 35px;
@@ -65,10 +64,9 @@ nav {
     transition: opacity 0.5s;
 
     &:hover {
-      color: white
+      color: white;
     }
   }
-
 
   &.visible {
     height: 100px;
@@ -85,7 +83,6 @@ nav {
   height: 95vh;
   object-fit: cover;
 }
-
 
 .swiper-container {
   width: 100%;
@@ -123,8 +120,8 @@ nav {
   position: absolute;
   text-align: center;
   padding: 3px 5px;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   z-index: 10;
@@ -132,7 +129,7 @@ nav {
 
 .swiper-pagination-bullets {
   bottom: 45px !important;
-  background: rgba(0, 0, 0, .2) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
   width: auto !important;
   border-radius: 40px !important;
   padding-left: 5px;
@@ -147,7 +144,7 @@ nav {
   display: inline-block;
   border-radius: 100%;
   background: #000;
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .swiper-pagination-bullet {
@@ -162,12 +159,14 @@ nav {
   background: #e3127c !important;
 }
 
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
   left: 10px;
   right: auto;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   position: absolute;
   top: 50%;
   padding: 10px;
@@ -182,12 +181,12 @@ nav {
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   color: #fff !important;
-  background-color: rgba(0, 0, 0, .4) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
   padding: 30px 30px;
 }
-
 
 footer {
   width: 100%;
@@ -215,7 +214,7 @@ footer {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
-  transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 
   &:hover {
     background-color: #fff;
@@ -223,7 +222,7 @@ footer {
   }
 }
 
-p{
+p {
   font-size: 18px;
   line-height: 27px;
 }

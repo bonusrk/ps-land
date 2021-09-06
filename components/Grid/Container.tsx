@@ -1,5 +1,5 @@
-import React from 'react';
-import clsx from 'clsx';
+import React from 'react'
+import clsx from 'clsx'
 
 export type GridProps = {
   space?: number
@@ -12,18 +12,14 @@ export type GridProps = {
   smGrid?: number
   mdGrid?: number
   lgGrid?: number
-};
+}
 
-export type ContainerProps = Pick<GridProps, 'space' | 'className'>;
+export type ContainerProps = Pick<GridProps, 'space' | 'className'>
 
 const Container: React.FC<ContainerProps> = (props): JSX.Element => {
-  const { children, className } = props;
-  const classList = clsx('container', className);
-  return (
-    <div className={classList}>
-      {children}
-    </div>
-  );
-};
+  const { children, className } = props
+  const classList = clsx('container', className)
+  return <div className={classList}>{children}</div>
+}
 
-export default Container;
+export default Container

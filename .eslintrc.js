@@ -23,7 +23,7 @@ module.exports = {
   },
   ignorePatterns: ['.eslintrc.js', '*.config.js'],
   rules: {
-    'max-len': ['error', {'code': 120}],
+    'max-len': ['error', { code: 120 }],
     'react/no-array-index-key': 0,
     'react/react-in-jsx-scope': 0,
     'react/display-name': 0,
@@ -53,4 +53,4 @@ module.exports = {
       },
     ],
   },
-};
+}
