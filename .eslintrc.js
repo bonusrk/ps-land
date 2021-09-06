@@ -23,7 +23,7 @@ module.exports = {
   },
   ignorePatterns: ['.eslintrc.js', '*.config.js'],
   rules: {
-    'max-len': ['error', {code: 120}],
+    'max-len': ['error', { code: 120 }],
     'react/no-array-index-key': 0,
     'react/react-in-jsx-scope': 0,
     'react/display-name': 0,
@@ -40,7 +40,7 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/no-var-requires': 0,
     '@typescript-eslint/no-use-before-define': 0,
-    '@typescript-eslint/semi': ["error"],
+    '@typescript-eslint/semi': ['error', 'always'],
     '@typescript-eslint/no-unused-vars': [
       2,
       {
@@ -54,4 +54,4 @@ module.exports = {
       },
     ],
   },
-};
+}
