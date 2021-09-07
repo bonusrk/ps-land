@@ -41,9 +41,9 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 0,
     '@typescript-eslint/no-use-before-define': 0,
     '@typescript-eslint/semi': 0,
-    'object-curly-newline':0,
-    '@typescript-eslint/comma-dangle':0,
-    'semi':0,
+    'object-curly-newline': 0,
+    '@typescript-eslint/comma-dangle': 0,
+    semi: 0,
     '@typescript-eslint/no-unused-vars': [
       2,
       {
